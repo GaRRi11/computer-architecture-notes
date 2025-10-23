@@ -34,4 +34,68 @@ underlying hardware in any computer performs the same basic functions: inputting
 
 -------------------------------------
 
+The optical mouse is actually a miniature optical processor including an
+LED to provide lighting, a tiny black-and-white camera, and a simple optical processor. The LED illuminates the surface underneath the mouse; the camera takes
+1500 sample pictures a second under the illumination. Successive pictures are sent
+to a simple optical processor that compares the images and determines whether
+the mouse has moved and how far. The replacement of the electromechanical
+mouse by the electro-optical mouse is an illustration of a common phenomenon
+where the decreasing costs and higher reliability of electronics cause an electronic
+solution to replace the older electromechanical technology
 
+
+----------------------------------------
+
+
+e screen.
+The image is composed of a matrix of picture elements, or pixels, which can be
+represented as a matrix of bits, called a bit map. Depending on the size of the
+screen and the resolution, the display matrix ranges in size from 512 ¥ 340 to
+1920 ¥ 1280 pixels in 2003. The simplest display has 1 bit per pixel, allowing it to
+be black or white. For displays that support 256 different shades of black and
+white, sometimes called gray-scale displays, 8 bits per pixel are required. A color
+display might use 8 bits for each of the three colors (red, blue, and gree
+
+---------------------------------------
+
+
+
+ The processor comprises two main components: datapath
+and control, the respective brawn and brain of the processor. The datapath performs the arithmetic operations, and control tells the datapath, memory, and I/O
+devices what to do according to the wishes of the instructions of the program.
+
+
+----------------------------------------
+
+
+Cache memory consists of a small, fast memory that acts as a buffer for
+the DRAM memory. (The nontechnical definition of cache is a safe place for hiding things.) Cache is built using a different memory technology, static random
+access memory (SRAM). SRAM is faster but less dense, and hence more expensive, than DRAM. 
+
+
+--------------------------------------
+
+
+I/O device ⇄ RAM ⇄ CPU
+
+Correct — keyboards and mice don’t need RAM to function.
+
+-------------------------------------
+
+add a, b, c # The sum of b and c is placed in a.
+add a, a, d # The sum of b, c, and d is now in a.
+add a, a, e # The sum of b, c, d, and e is now in a.
+
+----------------------------------
+
+
+--When a compiler processes a complex expression, it first creates temporary variables to hold intermediate results. These temporaries exist only inside the compiler as conceptual placeholders—they are not stored in CPU registers or RAM yet. To actually execute the code, the compiler must map each temporary variable to a real CPU register (or memory if registers are full). Then it generates assembly instructions using these registers. The CPU executes these instructions at runtime, performing the actual calculations. ✅ Rule: A CPU cannot operate on temporary variables directly; they must be assigned to registers or memory first.
+
+
+-------------------------------------
+
+CPUs only execute native machine code for their architecture.
+
+C/C++ compilers generate that machine code directly; you must specify the target architecture.
+
+Interpreted or bytecode languages (Java, Python, etc.) rely on an interpreter or VM. The interpreter/VM detects the CPU/OS and either interprets or JIT-compiles the code into native machine instructions at runtime.
