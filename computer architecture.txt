@@ -1,0 +1,37 @@
+computer architecture book notes
+
+An
+operating system interfaces between a user’s program and the hardware and provides a variety of services and supervisory functions. Among the most important
+functions are
+■ handling basic input and output operations
+■ allocating storage and memory
+■ providing for sharing the computer among multiple applications using it
+simultaneously
+
+-----------------------------------------
+
+Examples of operating systems in use today are Windows, Linux, and MacOS.
+Compilers perform another vital function: the translation of a program written in a high-level language, such as C or Java, into instructions that the hardwarecan execute. Given the sophistication of modern programming languages and the
+simple instructions executed by the hardware, the translation from a high-level
+language program to hardware instructions is complex. We will give a brief overview of the process and return to the subject in Chapter 2. 
+
+------------------------------------------
+
+Assembly language requires the programmer to
+write one line for every instruction that the machine will follow, forcing the programmer to think like the machine. 
+
+------------------------------------------
+
+
+compiler turn high-level programming language code into assembly code. then assembly turns it into binary.
+
+
+-------------------------------------------
+
+The
+underlying hardware in any computer performs the same basic functions: inputting data, outputting data, processing data, and storing data.
+
+
+-------------------------------------
+
+
